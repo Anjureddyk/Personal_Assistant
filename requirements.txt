@@ -3,4 +3,5 @@ uvicorn
 ctransformers
 langchain
 python-box
-streamlit
+streamlit==0.88.0
+pyttsx3==2.90
