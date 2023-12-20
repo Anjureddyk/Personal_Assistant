@@ -7,13 +7,11 @@ This project leverages advanced language models to create a versatile personal a
 ## Features
 * **Dynamic Content Generation:** The personal assistant utilizes the powerful LLama 2 language model to generate context-aware responses.
 * **User-Friendly Interface:** The Streamlit app provides an intuitive and easy-to-use interface for seamless interaction.
-* **Speech Synthesis:** Responses come to life with built-in text-to-speech capabilities, enhancing the user experience.
 
 ## Getting Started
 1. **Input Your Query:** Enter your request or prompt in the provided text input.
 2. **Configure Parameters:** Fine-tune the response by adjusting parameters such as word count and writing style.
 3. **Click Generate:** Watch as the AI generates a tailored response based on your input.
-4. **Listen to the Response:** Experience the content through both visual and auditory senses with the built-in speech synthesis feature.
 
 ## Deployment
 Deploy your own personal assistant on Streamlit Sharing to share it with the world! Follow these simple steps:
