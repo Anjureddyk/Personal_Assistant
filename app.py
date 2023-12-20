@@ -37,7 +37,7 @@ st.set_page_config(page_title="AI Personal Assistant",
                     layout='centered',
                     initial_sidebar_state='collapsed')
 
-st.header("Generate Blogs 🤖")
+st.header("AI Personal Assistant 🤖")
 
 input_text=st.text_input("Enter the Blog Topic")
 
@@ -56,3 +56,5 @@ submit=st.button("Generate")
 ## Final response
 if submit:
     st.write(getLLamaresponse(input_text,no_words,blog_style))
+    
+st.markdown("[Link to Code!!](https://github.com/Anjureddyk/Personal_Assistant)", unsafe_allow_html=True)
