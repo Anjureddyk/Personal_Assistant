@@ -32,7 +32,7 @@ def getLLamaresponse(input_text,no_words,blog_style):
 
 
 
-st.set_page_config(page_title="Generate Blogs",
+st.set_page_config(page_title="AI Personal Assistant",
                     page_icon='🤖',
                     layout='centered',
                     initial_sidebar_state='collapsed')
@@ -49,7 +49,7 @@ with col1:
     no_words=st.text_input('No of Words')
 with col2:
     blog_style=st.selectbox('Writing the blog for',
-                            ('Researchers','Data Scientist','Common People'),index=0)
+                            ('Technical','Business','Personal'),index=0)
     
 submit=st.button("Generate")
 
