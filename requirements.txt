@@ -1,7 +1,5 @@
-sentence-transformers
-uvicorn
-ctransformers
+streamlit==1.0.0
+gtts==2.2.2
 langchain
-python-box
-streamlit==0.88.0
-pyttsx3==2.90
+transformers==4.12.2
+
