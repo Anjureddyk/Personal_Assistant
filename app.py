@@ -1,5 +1,6 @@
 import streamlit as st
-import pyttsx3
+from gtts import gTTS
+from io import BytesIO
 from langchain.prompts import PromptTemplate
 from langchain.llms import CTransformers
 
@@ -43,7 +44,8 @@ if submit:
     response = getLLamaresponse(input_text, no_words, blog_style)
     st.write(response)
 
-    # Text-to-speech
-    engine = pyttsx3.init()
-    engine.say(response)
-    engine.runAndWait()
+    # Text-to-speech with gTTS
+    tts = gTTS(response)
+    mp3_fp = BytesIO()
+    tts.save(mp3_fp)
+    st.audio(mp3_fp.read(), format="audio/mp3", start_time=0)
