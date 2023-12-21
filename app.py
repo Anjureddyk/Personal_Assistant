@@ -1,16 +1,17 @@
 import streamlit as st
 from langchain.prompts import PromptTemplate
 from langchain.llms import CTransformers
+import os
 
 ## Function To get response from LLAma 2 model
 
 def getLLamaresponse(input_text,no_words,blog_style):
 
     ### LLama2 model
-    llm=CTransformers(model=r'C://Users//Anju Reddy K//Personal_projects//Blog_Generation//models//llama-2-7b-chat.ggmlv3.q8_0.bin',
-                      model_type='llama',
-                      config={'max_new_tokens':256,
-                              'temperature':0.01})
+    model_path = r'C:\Users\Anju Reddy K\Personal_projects\Blog_Generation\models\llama-2-7b-chat.ggmlv3.q8_0.bin'
+    print(f"Model Path: {model_path}")
+    llm = CTransformers(model=model_path,model_type='llama',config={'max_new_tokens': 256, 'temperature': 0.01})
+
     
     ## Prompt Template
 
